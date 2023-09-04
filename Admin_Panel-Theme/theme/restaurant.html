@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="Dashto - Powerfull Admin Template">
+      <meta name="keywords" content="admin dashboard, admin panel, dashboard, responsive dashboard, admin template, themeforest, dashboard template, css3, html5">
+      <title>Custom Tiles</title>
+      <link href="assets/img/logo/favicon.png" rel="icon">
+      <link rel="apple-touch-icon" href="assets/img/logo/touch-icon-iphone.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/touch-icon-ipad.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/touch-icon-iphone-retina.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="assets/img/logo/touch-icon-ipad-retina.png">
+      <link href="assets/css/vendor.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div id="loader">
+         <div id="loader-content">
+            <div id="loader-circle"></div>
+            <span>Dashto Admin</span>
+         </div>
+      </div>
+      <div id="wrapper">
+         <header id="header">
+            <a href="javascript:void(0);" id="hamburger"><i class="icon ion-navicon"></i></a>
+            <form action="#" class="search-form">
+               <div class="input-group">
+                  <button type="button" class="btn"><i class="icon ion-ios-search-strong"></i></button>
+                  <div id="search-input"><input type="text" placeholder="Type & hit enter" class="form-control"> <a href="javascript:void(0);" class="icon ion-close-round"></a></div>
+               </div>
+            </form>
+            <ul class="navbar ml-auto">
+               <li class="dropdown">
+                  <a href="javascript:void(0);" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="language">English</span></a>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="lang">
+                     <li class="dropdown-item"><a href="#">Chinese</a></li>
+                     <li class="dropdown-item"><a href="#">French</a></li>
+                     <li class="dropdown-item"><a href="#">German</a></li>
+                     <li class="dropdown-item"><a href="#">Japanese</a></li>
+                     <li class="dropdown-item"><a href="#">Russian</a></li>
+                     <li class="dropdown-item"><a href="#">Urdu</a></li>
+                  </ul>
+               </li>
+               <li class="dropdown dropdown-lg">
+                  <a href="javascript:void(0);" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ion-ios-bell"></i> <span class="notify"></span> <span></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notifications">
+                     <div class="dropdown-header">
+                        <h6 class="h6">Notifications</h6>
+                     </div>
+                     <ul class="dropdown-body msg-list scrollbar">
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle bg-info"><i class="icon ion-email"></i></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">New task available</span><span class="time">10:22 am</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle bg-red"><i class="icon ion-android-warning"></i></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Server space is full</span><span class="time">03:41 pm</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle bg-green"><i class="icon ion-document-text"></i></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Your details completed</span><span class="time">11:01 am</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle bg-yellow"><i class="icon ion-help-circled"></i></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Please help me</span><span class="time">05:34 pm</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="dropdown-footer"><a href="#">See all notifications</a></div>
+                  </div>
+               </li>
+               <li class="dropdown dropdown-lg">
+                  <a href="javascript:void(0);" id="emails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ion-android-chat"></i> <span class="notify"></span> <span></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="emails">
+                     <div class="dropdown-header">
+                        <h6 class="h6">You have 4 messages</h6>
+                     </div>
+                     <ul class="dropdown-body msg-list scrollbar">
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle"><img src="assets/img/user/thumb/1.jpg" alt="user"></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Hey! where are you</span><span class="time">10:22 am</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle"><img src="assets/img/user/thumb/2.jpg" alt="user"></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Nice profile</span><span class="time">03:41 pm</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle"><img src="assets/img/user/thumb/3.jpg" alt="user"></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Hi, please complete your task</span><span class="time">11:01 am</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle"><img src="assets/img/user/thumb/4.jpg" alt="user"></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Like your work</span><span class="time">05:34 pm</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class="msg-list-item">
+                              <span class="thumb-circle"><img src="assets/img/user/thumb/5.jpg" alt="user"></span>
+                              <div class="desc">
+                                 <span class="msg-title"><span class="text-truncate">Let go for meeting</span><span class="time">01:12 pm</span></span>
+                                 <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="dropdown-footer"><a href="#">See all messages</a></div>
+                  </div>
+               </li>
+               <li><a href="javascript:void(0);" id="themeSettings"><i class="icon ion-android-settings"></i></a></li>
+            </ul>
+         </header>
+         <aside id="sidebar">
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo/dark-logo.png" id="dark-logo" alt="logo"> <img src="assets/img/logo/white-logo.png" id="white-logo" alt="logo"> <span>Dashto</span></a>
+            <div class="user-thumb dropdown">
+               <a href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/user/thumb/1.jpg" alt="user"></a>
+               <div class="dropdown-menu">
+                  <ul>
+                     <li class="dropdown-item"><a href="pages/profile.html">My Profile</a></li>
+                     <li class="dropdown-item"><a href="apps/inbox.html">Inbox</a></li>
+                     <li class="dropdown-item"><a href="apps/chat.html">Messages</a></li>
+                     <li class="dropdown-divider"></li>
+                     <li class="dropdown-item"><a href="pages/signin.html"><i class="icon font-16 ion-log-out"></i> Logout</a></li>
+                  </ul>
+               </div>
+               <div class="user-desc"><a href="javascript:void(0);" class="user-name">Alexa Lingin</a> <a href="pages/signin.html" class="btn btn-border btn-border-blue btn-sm">Logout</a></div>
+            </div>
+            <nav id="sidebar-nav">
+               <ul>
+                  <li class="nav-head"><span class="head">Navigation</span></li>
+                  <li class="active">
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-speedometer"></i> <span>Dashborad</span> <span class="badge badge-pill bg-primary">4</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="analytics.html">Analytics</a></li>
+                        <li><a href="demography.html">Demography</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="hospital.html">Hospital</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-laptop"></i> <span>Layout</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="#">Full width</a></li>
+                        <li><a href="#">Fixed width</a></li>
+                        <li><a href="#">RTL</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-bag"></i> <span>Ecommerce</span> <span class="badge badge-pill bg-purple">New</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="ecommerce/ecommerce.html">Dashboard</a></li>
+                        <li><a href="ecommerce/product.html">Products</a></li>
+                        <li><a href="ecommerce/add-product.html">Add products</a></li>
+                        <li><a href="ecommerce/order.html">Orders</a></li>
+                        <li><a href="ecommerce/cart.html">Cart</a></li>
+                        <li><a href="ecommerce/checkout.html">Checkout</a></li>
+                        <li><a href="ecommerce/invoice.html">Invoice</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-grid"></i> <span>Apps</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="apps/inbox.html">Indox</a></li>
+                        <li><a href="apps/chat.html">Chat</a></li>
+                        <li><a href="apps/contact.html">Contact</a></li>
+                        <li><a href="apps/weather.html">Weather</a></li>
+                        <li><a href="apps/calendar.html">Calendar</a></li>
+                        <li><a href="apps/todo.html">To Do</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-head"><span class="head">Components</span></li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-outlet"></i> <span>Base</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/base/color.html">State Colors</a></li>
+                        <li><a href="components/base/typo.html">Typography</a></li>
+                        <li><a href="components/base/grid.html">Grid</a></li>
+                        <li><a href="components/base/alerts-and-badge.html">Alerts &amp; Badge</a></li>
+                        <li><a href="components/base/button.html">Button</a></li>
+                        <li><a href="components/base/card.html">Card</a></li>
+                        <li><a href="components/base/carousel.html">Carousel</a></li>
+                        <li><a href="components/base/collapse.html">Collapse</a></li>
+                        <li><a href="components/base/dropdowns.html">Dropdowns</a></li>
+                        <li><a href="components/base/inputs.html">Inputs</a></li>
+                        <li><a href="components/base/list.html">List Group</a></li>
+                        <li><a href="components/base/modal.html">Modal</a></li>
+                        <li><a href="components/base/pagination.html">Pagination</a></li>
+                        <li><a href="components/base/prograss-bar.html">Prograss Bar</a></li>
+                        <li><a href="components/base/table.html">Table</a></li>
+                        <li><a href="components/base/tabs.html">Tabs</a></li>
+                        <li><a href="components/base/other.html">Other</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-trophy"></i> <span>Advance</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/advance/custom-form.html">Custom Form</a></li>
+                        <li><a href="components/advance/file-upload.html">File Upload</a></li>
+                        <li><a href="components/advance/pickers.html">Pickers</a></li>
+                        <li><a href="components/advance/sweet-alert.html">Sweet Alert</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-clipboard"></i> <span>Form</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/form/basic.html">Basic</a></li>
+                        <li><a href="components/form/editor.html">HTML5 Editor</a></li>
+                        <li><a href="components/form/validation.html">Validation</a></li>
+                        <li><a href="components/form/x-editable.html">X-Editable</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-coffee"></i> <span>Icons</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/icons/font-awesome.html">Font Awesome</a></li>
+                        <li><a href="components/icons/ionicons.html">Ionicons</a></li>
+                        <li><a href="components/icons/material.html">Material Icons</a></li>
+                        <li><a href="components/icons/weather.html">Weather Icons</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-ios-barcode"></i> <span>Data Table</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/datatable/basic.html">Basic</a></li>
+                        <li><a href="components/datatable/editable.html">Editable</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-ios-pie"></i> <span>Charts</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/charts/chartjs.html">Chartjs</a></li>
+                        <li><a href="components/charts/chartist.html">Chartist</a></li>
+                        <li><a href="components/charts/sparkline.html">Sparkline</a></li>
+                        <li><a href="components/charts/flot.html">Flot</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-calendar"></i> <span>Calendar</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/calendar/basic.html">Basic</a></li>
+                        <li><a href="components/calendar/advance.html">Advance</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-map"></i> <span>Maps</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="components/maps/jvector.html">jVector</a></li>
+                        <li><a href="components/maps/google.html">Google</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-head"><span class="head">Feature</span></li>
+                  <li>
+                     <a href="javascript:void(0);" class="sub-nav"><i class="icon ion-social-html5"></i> <span>Pages</span></a>
+                     <ul class="sub-nav-item">
+                        <li><a href="pages/blank.html">Blank</a></li>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="pages/profile.html">Profile</a></li>
+                        <li><a href="pages/signin.html">Sign In</a></li>
+
+                        <li><a href="pages/signup.html">Sign Up</a></li>
+                        <li><a href="pages/forgot.html">Forgot</a></li>
+                        <li><a href="pages/reset.html">Reset</a></li>
+                        <li><a href="pages/lock.html">Lock</a></li>
+                        <li><a href="pages/404.html">404</a></li>
+                        <li><a href="pages/500.html">500</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="http://kri8thm.com/html/dashto/docs/doc.html"><i class="icon ion-document-text"></i> <span>Documentation</span></a></li>
+               </ul>
+            </nav>
+         </aside>
+         <main id="page-wrapper">
+            <div class="container-fluid">
+               <div class="page-header d-flex">
+                  <div class="heading page-header-item">
+                     <h6 class="h6">Restaurant</h6>
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="restaurant.html">Dashboard</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Restaurant</li>
+                        </ol>
+                     </nav>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="card card-shadow card-primary card-h-100 p-3">
+                        <div class="d-flex">
+                           <h6 class="h6 card-title">Customer Rating</h6>
+                           <div class="ml-auto"><i class="icon ion-star"></i> <span>4</span></div>
+                        </div>
+                        <div id="rating-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="card card-shadow card-h-100 overflow-hidden">
+                        <div class="px-3 pt-3">
+                           <h6 class="h6 card-title">Revenue</h6>
+                        </div>
+                        <div id="revenue-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="card card-shadow p-3">
+                        <div class="d-flex">
+                           <h6 class="h6 card-title">Customer Feed</h6>
+                           <ul class="card-option d-flex ml-auto">
+                              <li class="dropdown">
+                                 <a href="javascript:void(0);" id="more-option1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mi mi-more-vert"></i></a>
+                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="more-option1">
+                                    <li class="dropdown-item"><a href="#">Action</a></li>
+                                    <li class="dropdown-item"><a href="#">Another action</a></li>
+                                    <li class="dropdown-item"><a href="#">Delete</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="javascript:void(0);" class="card-close"><i class="mi mi-close"></i></a></li>
+                           </ul>
+                        </div>
+                        <ul id="customer-feed" class="msg-list">
+                           <li>
+                              <a href="#" class="msg-list-item">
+                                 <span class="thumb-circle"><img src="assets/img/user/thumb/1.jpg" alt="user"></span>
+                                 <div class="desc">
+                                    <span class="msg-title"><span class="text-truncate">Nice food</span><span class="time">5 minutes ago</span></span>
+                                    <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="msg-list-item">
+                                 <span class="thumb-circle"><img src="assets/img/user/thumb/2.jpg" alt="user"></span>
+                                 <div class="desc">
+                                    <span class="msg-title"><span class="text-truncate">Nice profile</span><span class="time">03:41 pm</span></span>
+                                    <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="msg-list-item">
+                                 <span class="thumb-circle"><img src="assets/img/user/thumb/3.jpg" alt="user"></span>
+                                 <div class="desc">
+                                    <span class="msg-title"><span class="text-truncate">Hi, please improve your service</span><span class="time">5 hours ago</span></span>
+                                    <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="msg-list-item">
+                                 <span class="thumb-circle"><img src="assets/img/user/thumb/4.jpg" alt="user"></span>
+                                 <div class="desc">
+                                    <span class="msg-title"><span class="text-truncate">Awesome, I like your food</span><span class="time">05:34 pm</span></span>
+                                    <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="msg-list-item">
+                                 <span class="thumb-circle"><img src="assets/img/user/thumb/5.jpg" alt="user"></span>
+                                 <div class="desc">
+                                    <span class="msg-title"><span class="text-truncate">Please hurry! I so hungry</span><span class="time">2 minutes ago</span></span>
+                                    <p class="text-truncate">Sed ut perspiciatis unde omnis iste natus error</p>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="card card-shadow card-h-100 p-3">
+                        <h6 class="h6 card-title">Menu List</h6>
+                        <div class="table-border-none menu-order-scroll">
+                           <div class="table-responsive">
+                              <table class="table mb-0">
+                                 <tbody>
+                                    <tr>
+                                       <td>Hot dog</td>
+                                       <td><span class="badge bg-red">$10</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Beef Empanadas</td>
+                                       <td><span class="badge bg-red">$50</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Baked broccoli</td>
+                                       <td><span class="badge bg-green">$15</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Eggplant parmigiana</td>
+                                       <td><span class="badge bg-yellow">$12</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Spicy meatballs</td>
+                                       <td><span class="badge bg-red">$14</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Sea salt and pepper calamari</td>
+                                       <td><span class="badge bg-red">$17</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Cannelloni with spinach and ricotta</td>
+                                       <td><span class="badge bg-green">$13</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Wild mushroom puree soup</td>
+                                       <td><span class="badge bg-green">$13</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Natural beef shoulder tenderloin steak</td>
+                                       <td><span class="badge bg-red">$13</span></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                     <div class="card card-shadow card-h-100 p-3">
+                        <div class="d-flex">
+                           <h6 class="h6 card-title">Online Order List</h6>
+                           <ul class="card-option d-flex ml-auto">
+                              <li class="dropdown">
+                                 <a href="javascript:void(0);" id="more-option3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mi mi-more-vert"></i></a>
+                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="more-option3">
+                                    <li class="dropdown-item"><a href="#">Action</a></li>
+                                    <li class="dropdown-item"><a href="#">Another action</a></li>
+                                    <li class="dropdown-item"><a href="#">Delete</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="table-responsive">
+                           <table class="table mb-0">
+                              <thead>
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Order Id</th>
+                                    <th>Product</th>
+                                    <th>Quentity</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>Barb Ackue</td>
+                                    <td>#12354</td>
+                                    <td class="c-green">Hot dog</td>
+                                    <td>1</td>
+                                    <td class="c-green">$10</td>
+                                    <td><span class="badge bg-green">Paid</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Nick R. Bocker</td>
+                                    <td>#12354</td>
+                                    <td class="c-yellow">Hot dog</td>
+                                    <td>1</td>
+                                    <td class="c-yellow">$10</td>
+                                    <td><span class="badge bg-yellow">Panding</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Walter Melon</td>
+                                    <td>#12354</td>
+                                    <td class="c-yellow">Hot dog</td>
+                                    <td>1</td>
+                                    <td class="c-yellow">$10</td>
+                                    <td><span class="badge bg-yellow">Panding</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Anna Mull</td>
+                                    <td>#12354</td>
+                                    <td class="c-green">Hot dog</td>
+                                    <td>1</td>
+                                    <td class="c-green">$10</td>
+                                    <td><span class="badge bg-green">Paid</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Anna Sthesia</td>
+                                    <td>#12354</td>
+                                    <td class="c-red">Hot dog</td>
+                                    <td>1</td>
+                                    <td class="c-red">$10</td>
+                                    <td><span class="badge bg-red">Cancel</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Petey Cruiser</td>
+                                    <td>#12354</td>
+                                    <td class="c-green">Hot dog</td>
+                                    <td>1</td>
+                                    <td class="c-green">$10</td>
+                                    <td><span class="badge bg-green">Paid</span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-3">
+                     <div id="weather-deck" class="card card-shadow px-3"></div>
+                     <div class="card card-flex card-shadow p-3">
+                        <div class="bg-green rounded py-2 px-3">
+                           <div class="text-center"><i class="icon font-24 ion-cash"></i></div>
+                           <i class="icon ion-arrow-graph-up-right"></i> <span>16%</span>
+                        </div>
+                        <div class="ml-4">
+                           <h6 class="h6">Net Earning</h6>
+                           <span>$ 1,12,453</span>
+                        </div>
+                     </div>
+                     <div class="card card-flex card-shadow p-3">
+                        <div class="bg-purple rounded py-2 px-3">
+                           <div class="text-center"><i class="icon font-24 ion-person-stalker"></i></div>
+                           <i class="icon ion-arrow-graph-up-right"></i> <span>16%</span>
+                        </div>
+                        <div class="ml-4">
+                           <h6 class="h6">Today Delevered</h6>
+                           <span>1,453</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="card card-shadow card-h-100 p-3">
+                        <div class="d-flex">
+                           <h6 class="h6 card-title">Todo List</h6>
+                           <ul class="card-option d-flex ml-auto">
+                              <li class="dropdown">
+                                 <a href="javascript:void(0);" id="more-option2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mi mi-more-vert"></i></a>
+                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="more-option2">
+                                    <li class="dropdown-item"><a href="#">Action</a></li>
+                                    <li class="dropdown-item"><a href="#">Another action</a></li>
+                                    <li class="dropdown-item"><a href="#">Delete</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="javascript:void(0);" class="card-close"><i class="mi mi-close"></i></a></li>
+                           </ul>
+                        </div>
+                        <input type="text" placeholder="Write text & hit enter" id="todo-input" class="form-control mb-3">
+                        <ul id="todo-list">
+                           <li class="todo-item">
+                              <div class="cf-checkbox"><input type="checkbox" id="ck1"> <label for="ck1">Pizza delivery</label></div>
+                              <a href="javascript:void(0);" class="tl-close"><i class="mi mi-close"></i></a>
+                           </li>
+                           <li class="todo-item">
+                              <div class="cf-checkbox"><input type="checkbox" id="ck2"> <label for="ck2">Clean table 24</label></div>
+                              <a href="javascript:void(0);" class="tl-close"><i class="mi mi-close"></i></a>
+                           </li>
+                           <li class="todo-item">
+                              <div class="cf-checkbox"><input type="checkbox" id="ck3" checked="checked"> <label for="ck3">Give token at counter</label></div>
+                              <a href="javascript:void(0);" class="tl-close"><i class="mi mi-close"></i></a>
+                           </li>
+                           <li class="todo-item">
+                              <div class="cf-checkbox"><input type="checkbox" id="ck4"> <label for="ck4">Make egg burger</label></div>
+                              <a href="javascript:void(0);" class="tl-close"><i class="mi mi-close"></i></a>
+                           </li>
+                           <li class="todo-item">
+                              <div class="cf-checkbox"><input type="checkbox" id="ck5" checked="checked"> <label for="ck5">Pizza delivery</label></div>
+                              <a href="javascript:void(0);" class="tl-close"><i class="mi mi-close"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-5">
+                     <div class="card card-shadow card-h-100 p-3">
+                        <div class="d-flex">
+                           <h6 class="h6 card-title">Earning Graph</h6>
+                           <ul class="card-option d-flex ml-auto">
+                              <li><a href="javascript:void(0);"><i class="mi mi-cached"></i></a></li>
+                              <li class="dropdown">
+                                 <a href="javascript:void(0);" id="more-option4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mi mi-more-vert"></i></a>
+                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="more-option4">
+                                    <li class="dropdown-item"><a href="#">Action</a></li>
+                                    <li class="dropdown-item"><a href="#">Another action</a></li>
+                                    <li class="dropdown-item"><a href="#">Delete</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                        <canvas id="earning-graph"></canvas>
+                        <ul class="d-flex mt-4">
+                           <li class="chart-label mr-4"><span class="color-box bg-red mr-2"></span> <span>Expenses</span></li>
+                           <li class="chart-label"><span class="color-box bg-pink mr-2"></span> <span>Profit</span></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="card card-shadow card-social-facebook p-3">
+                        <i class="icon font-24 ion-social-facebook"></i>
+                        <div class="social-body"><span class="social-desc">Like us<br>on Facebook</span> <span class="social-number">15,243</span></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="card card-shadow card-social-twitter p-3">
+                        <i class="icon font-24 ion-social-twitter"></i>
+                        <div class="social-body"><span class="social-desc">Follow us<br>on Twitter</span> <span class="social-number">7,243</span></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="card card-shadow card-social-google p-3">
+                        <i class="icon font-24 ion-social-googleplus"></i>
+                        <div class="social-body"><span class="social-desc">Follow us<br>on Google+</span> <span class="social-number">1,243</span></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="card card-shadow card-social-linkedin p-3">
+                        <i class="icon font-24 ion-social-linkedin"></i>
+                        <div class="social-body"><span class="social-desc">Follow us<br>on Linkedin</span> <span class="social-number">5,043</span></div>
+                     </div>
+                  </div>
+               </div>
+               <footer class="text-center mb-4">© 2018 Dashto by kri8thm.com</footer>
+            </div>
+         </main>
+         <aside id="right-sidebar"></aside>
+      </div>
+      <script src="assets/js/vendor.js"></script><script src="assets/js/apps/init.weather.js"></script><script src="assets/js/base/init.dashboard.js"></script><script src="assets/js/base/init.switcher.js"></script><script src="assets/js/base/custom.js"></script>
+   </body>
+   <!-- Mirrored from www.kri8thm.in/html/dashto/theme/restaurant.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 10:50:39 GMT -->
+</html>

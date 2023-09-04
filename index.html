@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Folder Redirection</title>
+	<!-- Bootstrap CSS and Font Awesome CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+	<!-- Favicon -->
+	<link rel="icon" href="https://devistic-asim.github.io/DailyDevistic.github.io/img/da-white.png"
+		type="image/x-icon">
+
+	<!-- Custom CSS for centering the form and dim dark background -->
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: #333;
+			background-size: cover;
+		}
+
+		.container {
+			max-width: 80%;
+			text-align: center;
+			padding: 20px;
+			background-color: #dadada;
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+		}
+
+		.container h1 {
+			color: #333;
+		}
+
+		.input-group-append button {
+			background-color: #007BFF;
+			border: none;
+		}
+
+		.input-group-append button:hover {
+			background-color: #0056b3;
+		}
+
+		.input-group-append button i {
+			color: #fff;
+		}
+
+		img.logo {
+			position: absolute;
+			width: 10rem;
+			top: 3rem;
+			left: 51%;
+			z-index: 0;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container position-relative">
+		<img class="logo" src="https://devistic-asim.github.io/DailyDevistic.github.io/img/da-black2.png" alt="Devistic-Asim-Logo">
+		<br>
+		<br>
+		<br>
+		<h1 class="mb-4">Folder Redirection</h1>
+		<div class="input-group mb-3">
+			<input type="text" id="folderNameInput" class="form-control"
+				placeholder="Enter folder name like this -> Folder/Sub-folder">
+			<div class="input-group-append">
+				<button id="submitButton" class="btn btn-primary" type="button">
+					<i class="fas fa-folder-open"></i> Redirect
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script>
+		// Get the input field and submit button elements
+		const folderNameInput = $('#folderNameInput');
+		const submitButton = $('#submitButton');
+
+		// Add a click event listener to the submit button
+		submitButton.click(redirectToFolder);
+
+		// Add a keypress event listener to the input field to handle Enter key press
+		folderNameInput.keypress(function (event) {
+			if (event.key === 'Enter') {
+				redirectToFolder();
+			}
+		});
+
+		function redirectToFolder() {
+			// Get the folder name entered by the user
+			const folderName = folderNameInput.val().trim();
+
+			if (folderName !== '') {
+				// Construct the URL with the current directory and folder name
+				const currentURL = window.location.href;
+				const lastSlashIndex = currentURL.lastIndexOf('/');
+				const currentDirectory = currentURL.substring(0, lastSlashIndex + 1);
+				const redirectURL = currentDirectory + folderName;
+
+				// Redirect to the new URL
+				window.location.href = redirectURL;
+			} else {
+				alert('Please enter a folder name.');
+			}
+		}
+	</script>
+</body>
+
+</html>

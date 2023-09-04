@@ -1,0 +1,2 @@
+"use strict";var Timepicker=Timepicker||{};$(function(){Timepicker={init:function(){$(".timepicker").timepicker({icons:i}),$("#timepicker-1, #timepicker-1_modal").timepicker({icons:i,minuteStep:1,defaultTime:"",showSeconds:!0,showMeridian:!1}),$("#timepicker-2, #timepicker-2_modal").timepicker({icons:i,defaultTime:"09:12:36 AM",minuteStep:1,showSeconds:!0,showMeridian:!0})}};var i={up:"ion-ios-arrow-up",down:"ion-ios-arrow-down"};$(document).ready(Timepicker.init)});
+//# sourceMappingURL=timepicker.js.map

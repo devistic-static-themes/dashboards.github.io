@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.kri8thm.in/html/one-counter/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Sep 2020 11:20:02 GMT -->
+<head>
+
+<!-- Meta Tag -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>One Counter</title>
+
+<meta name="description" content="Coming Soon Landing Page"/>
+<meta name="keywords" content="Counter, html theme, Coming Soon Landing Page, Coming Soon Landing Page template, html landing page, one page, responsive landing page"/>
+<meta name="author" content="kri8thm">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.html" />
+
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<style>
+    body{
+        font-family: Montserrat, sans-serif;
+    }
+    ul li{
+        list-style: none
+    }
+    img{
+        max-width: 100%
+    }
+    #header{
+        background: url(img/index/bg.jpg) top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 760px;
+    }    
+    .table{
+        display: table;
+        height: 100%;
+        text-align: center;
+    }
+    .table-cell{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .table-cell img{
+        margin-bottom: 30px;
+    }
+    h1, h2{
+        margin-bottom: 50px;
+    }
+    .button{
+        display: inline-block;
+        padding: 0 25px;
+        border-radius: 20px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        border: 2px solid transparent;
+        -webkit-transition: all 0.5s ease-in-out;
+	    transition: all 0.5s ease-in-out
+    }
+    .explore{
+        padding: 0 25px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        line-height: 46px;
+    }
+    .button:focus{
+        outline: none;
+        text-decoration: none !important;
+    }
+    .button-bg{
+        background: #f14dff;
+        color: #fff;
+    }
+    .button-line{
+        background: #fff;
+        border-color: #f14dff;
+        color: #111312;
+    }
+    .button-bg:hover{
+        background: #fff;
+        border-color: #f14dff;
+        color: #111312;
+        text-decoration: none !important;
+    }
+    .button-line:hover{
+        background: #f14dff;
+        color: #fff;
+        text-decoration: none !important;
+    }
+    .button-bg:focus{
+        color: #fff;
+    }
+    .button-line:focus{
+        color: #111312;
+    }
+    .head{
+        display: block;
+        margin-bottom: 25px;
+        font-size: 24px
+    }
+    .preview-block{
+        margin-bottom: 100px;
+    }
+    .preview-block img{
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+        -webkit-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        -webkit-transition: all 0.5s ease-in-out;
+	    transition: all 0.5s ease-in-out
+    }
+    .preview-block:hover img{  
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7);
+    }
+    .preview-block a {
+        display: block;
+        position: relative;
+    }
+    .preview-block a label {
+        background: #f14dff;
+        width: 80px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fff;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        border-radius: 30px;
+        text-align: center;
+        -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+        z-index: 2;
+    }
+    .preview-footer{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        padding-left: 0;
+    }
+    .preview-footer li{
+        float: left;
+    }
+    .preview-footer li:first-child{
+        margin-right: 20px;
+    }
+    section .button:hover{
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.6);
+    }
+    #dark{
+        padding-top: 100px;
+        background: #111312;
+    }
+    #dark .head, #dark h2{
+        color: #fff;
+    }
+    #dark .button-line, #dark .button-bg:hover{
+        background: #111312;
+        border-color: #f14dff;
+        color: #fff;
+    }
+    #dark .button-line:hover{
+        background: #f14dff;
+        color: #fff;
+    }
+    #features{
+        background: #e7e7e7;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .features-block{
+        background: #fff;
+        height: 100px;
+        -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.5s ease-in-out;
+	    transition: all 0.5s ease-in-out
+    }
+    .features-block:hover{
+        -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    }
+    .features-block img, .features-block span{
+        display: inline-block;
+    }
+    .features-block span{
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .features-block .table-cell img{
+        margin-bottom: 0;
+    }
+    @media (max-width: 1520px){
+        #header { height: 480px; }
+    }
+    @media (max-width: 1200px){
+        .head { font-size: 20px }
+    }
+    @media (max-width: 1000px){
+        h1, h2 { font-size: 24px }
+        #header { height: 460px }
+        .features-block { margin-top: 15px; margin-bottom: 15px }
+    }
+    @media (max-width: 767px){
+        h2 { margin-bottom: 40px }
+        .preview-block { margin-bottom: 60px; width: 380px; margin-left: auto; margin-right: auto; }
+        .head { font-size: 18px }
+    }
+    @media (max-width: 420px){
+        .preview-block { width: 280px; }
+    }
+</style>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  
+</head>
+<body>
+
+<!-- Start header -->
+<div id="header">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container">
+                <a href="index-2.html"><img src="img/logo-black.png" alt=""></a>
+                <h1>One counter coming soon template</h1>
+                <a href="#light" class="button button-bg explore">Explore</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End header -->
+
+<!-- Start light -->
+<section id="light">
+    <div class="container">
+        <h2 class="text-center">Counter</h2>
+        <div class="row clearfix">
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Bubble Animation</span>
+                    <a href="counter_bubble_light.html" target="_blank">
+                        <label for="" class="label-shape">New</label>
+                        <img src="img/index/bubble-03.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Startic Image</span>
+                    <a href="counter_light.html" target="_blank"><img src="img/index/image-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Slider</span>
+                    <a href="counter_slider_light.html" target="_blank"><img src="img/index/slider-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Gradient</span>
+                    <a href="counter_gradient_light.html" target="_blank"><img src="img/index/gradient-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Zoominout</span>
+                    <a href="counter_zoomin_light.html" target="_blank"><img src="img/index/zoom-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Rain(webgl)</span>
+                    <a href="counter_rain_light.html" target="_blank"><img src="img/index/rain-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Heat Distortion(webgl)</span>
+                    <a href="counter_heat_light.html" target="_blank"><img src="img/index/heat-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Particles</span>
+                    <a href="counter_particle_light.html" target="_blank"><img src="img/index/particle-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Water Ripples</span>
+                    <a href="counter_ripples_light.html" target="_blank"><img src="img/index/ripples-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Snow</span>
+                    <a href="counter_snow_light.html" target="_blank"><img src="img/index/snow-03.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-center">Text</h2>
+        <div class="row clearfix">
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Bubble Animation</span>
+                    <a href="text_bubble_light.html" target="_blank">
+                        <label for="" class="label-shape">New</label>
+                        <img src="img/index/bubble-04.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Startic Image</span>
+                    <a href="text_light.html" target="_blank"><img src="img/index/image-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Slider</span>
+                    <a href="text_slider_light.html" target="_blank"><img src="img/index/slider-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Gradient</span>
+                    <a href="text_gradient_light.html" target="_blank"><img src="img/index/gradient-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Zoominout</span>
+                    <a href="text_zoomin_light.html" target="_blank"><img src="img/index/zoom-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Rain(webgl)</span>
+                    <a href="text_rain_light.html" target="_blank"><img src="img/index/rain-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Heat Distortion(webgl)</span>
+                    <a href="text_heat_light.html" target="_blank"><img src="img/index/heat-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Particles</span>
+                    <a href="text_particle_light.html" target="_blank"><img src="img/index/particle-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Water Ripples</span>
+                    <a href="text_ripples_light.html" target="_blank"><img src="img/index/ripples-04.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Snow</span>
+                    <a href="text_snow_light.html" target="_blank"><img src="img/index/snow-04.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End light -->
+
+<!-- Start dark -->
+<section id="dark">
+    <div class="container">
+        <h2 class="text-center">Counter</h2>
+        <div class="row clearfix">
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Bubble Animation</span>
+                    <a href="counter_bubble_dark.html" target="_blank">
+                        <label for="" class="label-shape">New</label>
+                        <img src="img/index/bubble-01.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Startic Image</span>
+                    <a href="counter_dark.html" target="_blank"><img src="img/index/image-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Slider</span>
+                    <a href="counter_slider_dark.html" target="_blank"><img src="img/index/slider-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Gradient</span>
+                    <a href="counter_gradient_dark.html" target="_blank"><img src="img/index/gradient-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Zoominout</span>
+                    <a href="counter_zoomin_dark.html" target="_blank"><img src="img/index/zoom-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Rain(webgl)</span>
+                    <a href="counter_rain_dark.html" target="_blank"><img src="img/index/rain-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Heat Distortion(webgl)</span>
+                    <a href="counter_heat_dark.html" target="_blank"><img src="img/index/heat-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Particles</span>
+                    <a href="counter_particle_dark.html" target="_blank"><img src="img/index/particle-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Water Ripples</span>
+                    <a href="counter_ripples_dark.html" target="_blank"><img src="img/index/ripples-01.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Snow</span>
+                    <a href="counter_snow_dark.html" target="_blank"><img src="img/index/snow-01.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-center">Text</h2>
+        <div class="row clearfix">
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Bubble Animation</span>
+                    <a href="text_bubble_dark.html" target="_blank">
+                        <label for="" class="label-shape">New</label>
+                        <img src="img/index/bubble-02.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Startic Image</span>
+                    <a href="text_dark.html" target="_blank"><img src="img/index/image-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Slider</span>
+                    <a href="text_slider_dark.html" target="_blank"><img src="img/index/slider-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Gradient</span>
+                    <a href="text_gradient_dark.html" target="_blank"><img src="img/index/gradient-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Zoominout</span>
+                    <a href="text_zoomin_dark.html" target="_blank"><img src="img/index/zoom-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Rain(webgl)</span>
+                    <a href="text_rain_dark.html" target="_blank"><img src="img/index/rain-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Heat Distortion(webgl)</span>
+                    <a href="text_heat_dark.html" target="_blank"><img src="img/index/heat-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Particles</span>
+                    <a href="text_particle_dark.html" target="_blank"><img src="img/index/particle-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Water Ripples</span>
+                    <a href="text_ripples_dark.html" target="_blank"><img src="img/index/ripples-02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="preview-block text-center">
+                    <span class="head">Snow</span>
+                    <a href="text_snow_dark.html" target="_blank"><img src="img/index/snow-02.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End dark -->
+
+<section id="features">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-4 col-sm-6">
+                <div class="features-block clearfix">
+                    <div class="table">
+                        <div class="table-cell">
+                            <img src="img/index/responsive.png" alt="">
+                            <span class="feat-name">Fully Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="features-block clearfix">
+                    <div class="table">
+                        <div class="table-cell">
+                            <img src="img/index/code.png" alt="">
+                            <span class="feat-name">Clean Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="features-block clearfix">
+                    <div class="table">
+                        <div class="table-cell">
+                            <img src="img/index/support.png" alt="">
+                            <span class="feat-name">24x7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".explore").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#light").offset().top - 50
+        }, 1000);
+    });
+})
+</script>
+</body>
+
+<!-- Mirrored from www.kri8thm.in/html/one-counter/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Sep 2020 11:20:26 GMT -->
+</html>

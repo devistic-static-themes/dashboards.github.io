@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.kri8thm.in/html/the-appo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Sep 2020 11:20:26 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Seo Meta -->
+    <meta name="description" content="The Appo - App Landing Template HTML5 and CSS3">
+    <meta name="keywords" content="app landing, app lander, app, one page landing page, themeforest, multi purpose, app, css3, html5">
+    <title>The Appo</title>
+    <!-- Favicon -->
+	<link href="img/favicon.png" rel="icon" />
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        .switcher {
+            display: none;
+        }
+        .header-shadow {
+            background: #2d2de2;
+        }
+        .banner {
+            background: #2d2de2;
+            height: 500px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        .banner .position-relative {
+            z-index: 2;
+        }
+        .btn {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .btn.bg-white {
+            font-weight: 500;
+            color: #2d2de2;
+        }
+        .round {
+            border-radius: 1.3rem
+        }
+        .pt-10 {
+            padding-top: 10rem;
+        }
+        .h1 {
+            font-weight: 700;
+        }
+        .btn {
+            border: none;
+        }
+        .bg-g-green, .bg-g-green:hover {
+            color: #fff;
+            font-weight: 700;
+            background: #0ba360;
+            background: -moz-linear-gradient(left, #0ba360 0%, #00e3ae 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, #0ba360), color-stop(100%, #00e3ae));
+            background: -webkit-linear-gradient(left, #0ba360 0%, #00e3ae 100%);
+            background: -o-linear-gradient(left, #0ba360 0%, #00e3ae 100%);
+            background: -ms-linear-gradient(left, #0ba360 0%, #00e3ae 100%);
+            background: linear-gradient(to right, #0ba360 0%, #00e3ae 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr= '#000000', GradientType=0 );
+        }
+        .bg-g-red, .bg-g-red:hover, .header-shadow .bg-white {
+            color: #fff;
+            font-weight: 700;
+            background: #fc6076;
+            background: -moz-linear-gradient(left, #fc6076 0%, #ff9a44 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, #fc6076), color-stop(100%, #ff9a44));
+            background: -webkit-linear-gradient(left, #fc6076 0%, #ff9a44 100%);
+            background: -o-linear-gradient(left, #fc6076 0%, #ff9a44 100%);
+            background: -ms-linear-gradient(left, #fc6076 0%, #ff9a44 100%);
+            background: linear-gradient(to right, #fc6076 0%, #ff9a44 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+        }
+        .head {
+            display: inline-block;
+            position: relative;
+            color: #2d2de2;
+            font-weight: 500;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        .head:after {
+            position: absolute;
+            content: '';
+            display: block;
+            right: 0;
+            bottom: 0;
+            width: 3rem;
+            height: 4px;
+            background-color: #000;
+        }
+        .img-priview {
+            position: relative;
+        }
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.8);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+        }
+        .img-priview:hover .img-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+        .special {
+            background-color: #f5f5f5;
+        }
+        #features{
+            background: #f5f5f5;
+            padding-bottom: 50px;
+        }
+        .features-block{
+            background: #fff;
+            height: 100px;
+            -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out
+        }
+        .features-block:hover{
+            -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+        }
+        .features-block img, .features-block span{
+            display: inline-block;
+        }
+        .features-block span{
+            margin-left: 20px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .features-block .table-cell img{
+            margin-bottom: 0;
+        }
+        .table{
+            display: table;
+            height: 100%;
+            text-align: center;
+        }
+        .table-cell{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .table-cell img{
+            margin-bottom: 30px;
+        }
+        .more {
+            height: 100px;
+            border: 2px solid #2d2de2;
+            padding: 3px;
+        }
+        .bd-tran {
+            background: #2d2de2;
+            height: 100%;
+        }
+        .more-txt {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fff
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" class="fixed-top">
+            <nav class="navbar" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="homepage-one-image.html"><img src="img/logo-white.png" alt="The Appo"></a>
+                    <a href="https://themeforest.net/item/the-appo-bootstap-4-app-landing-page/21327838" class="btn round bg-white float-right">Download</a>
+                </div>
+            </nav>
+        </header>
+        <div class="banner bg-shape shape-2">
+            <div class="position-relative">
+                <div class="container">
+                    <div class="pt-10 h1 pb-3">
+                        <span class="typewrite" data-period="2000" data-type='[ "Showcase you product", "Creative UI and clean code", "Variety of colors" ]'><span class="wrap"></span></span>
+                    </div>
+                    <p>The Appo is a modern and clean coded app showcase template. <br> It is build in Boostrap 4 and SASS it is easy to customize.</p>
+                    <div class="text-center">
+                        <a href="javascript:void(0)" class="btn round bg-g-green mr-2 demo-btn">Demo</a>
+                        <a href="https://themeforest.net/item/the-appo-bootstap-4-app-landing-page/21327838" class="btn round bg-g-red">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5" id="default">
+            <div class="container">
+                <span class="head mb-3">Default Pages</span>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/01.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-one-default.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/02.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-two-default.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/03.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-three-default.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="head mb-3 mt-5">Parallax Animation</span>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/01.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-one-parallax.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/02.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-two-parallax.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/03.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-three-parallax.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="head mb-3 mt-5">Static Image</span>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/04.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-one-image.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/05.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-two-image.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/06.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-three-image.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="head mb-3 mt-5">Background Video</span>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/16.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-one-youtube.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/17.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-two-youtube.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/18.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-three-youtube.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="head mb-3 mt-5">Animation</span>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/07.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-one-particle.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="homepage-one-particle.html" class="h5 mt-3" target="_blank">Particle One</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/08.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-two-particle.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="homepage-two-particle.html" class="h5 mt-3" target="_blank">Particle Two</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/09.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-one-bubble.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="homepage-one-bubble.html" class="h5 mt-3" target="_blank">Bubble One</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/10.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-two-bubble.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="homepage-two-bubble.html" class="h5 mt-3" target="_blank">Bubble Two</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/15.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="homepage-wave.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="homepage-wave.html" class="h5 mt-3" target="_blank">Wave</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="py-5">
+            <div class="container mb-3">
+                <div class="more">
+                    <div class="bd-tran d-flex">
+                        <span class="more-txt align-self-center mx-auto h3">more pages coming soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="py-5 special">
+            <div class="container">
+                <span class="head mb-3 mt-3">Special Pages</span>
+                <div class="row">                    
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/12.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="blog-details-left-sidebar.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-details-left-sidebar.html" class="h5 mt-3" target="_blank">Blog details left sidebar</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/11.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="blog-details-right-sidebar.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-details-right-sidebar.html" class="h5 mt-3" target="_blank">Blog details right sidebar</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/14.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="blog-left-sidebar.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-left-sidebar.html" class="h5 mt-3" target="_blank">Blog left sidebar</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="img-priview xs-shadow">
+                            <img src="img/preview/13.jpg" alt="">
+                            <div class="img-overlay d-flex">
+                                <div class="align-self-center mx-auto">
+                                    <a href="blog-right-sidebar.html" class="btn round bg-g-green" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-right-sidebar.html" class="h5 mt-3" target="_blank">Blog right sidebar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="features-block d-flex">
+                            <div class="d-flex mx-auto">
+                                <img src="img/responsive.png" alt="" class="align-self-center">
+                                <span class="align-self-center">Fully Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="features-block d-flex">
+                            <div class="d-flex mx-auto">
+                                <img src="img/code.png" alt="" class="align-self-center">
+                                <span class="align-self-center">Clean Code</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="features-block d-flex">
+                            <div class="d-flex mx-auto">
+                                <img src="img/support.png" alt="" class="align-self-center">
+                                <span class="align-self-center">24x7 Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blog.pages.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".demo-btn").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#default").offset().top - 50
+                }, 1000);
+            });
+        })
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+Rerun
+
+    </script>
+</body>
+
+<!-- Mirrored from www.kri8thm.in/html/the-appo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Sep 2020 11:20:42 GMT -->
+</html>

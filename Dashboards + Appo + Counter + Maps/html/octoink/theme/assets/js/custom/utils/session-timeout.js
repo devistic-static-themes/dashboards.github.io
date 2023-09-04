@@ -1,0 +1,2 @@
+"use strict";var bootstrapSessionTimeoutDemo=bootstrapSessionTimeoutDemo||{};$(function(){bootstrapSessionTimeoutDemo={init:function(){$.sessionTimeout({title:"Session Timeout Notification",message:"Your session is about to expire.",keepAliveUrl:"keep-alive.php",redirUrl:"?p=page_user_lock_1",logoutUrl:"?p=page_user_login_1",warnAfter:3e3,redirAfter:18e3,ignoreUserActivity:!0,countdownMessage:"Redirecting in {timer} seconds.",countdownBar:!0})}},$(document).ready(bootstrapSessionTimeoutDemo.init)});
+//# sourceMappingURL=session-timeout.js.map

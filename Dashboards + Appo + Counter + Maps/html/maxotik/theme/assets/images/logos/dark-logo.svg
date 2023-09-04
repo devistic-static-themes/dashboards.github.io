@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="56px" height="51px" viewBox="0 0 56 51" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#000000">
+    <path d="M0 0L0 32L8 32L8 8L0 0Z" transform="translate(0 18.5)"  stroke="none" />
+    <path d="M0 0L24 24L14.0111 24L0 9.78125L0 0Z" transform="translate(8 26.5)" stroke="none" />
+    <path d="M0 10.5L28 37L48 18.5L48 50.5L56 50.5L56 0L28 26.5L0 0L0 10.5Z" stroke="none" />
+  </g>
+</svg>

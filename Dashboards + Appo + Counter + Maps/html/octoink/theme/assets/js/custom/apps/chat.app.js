@@ -1,0 +1,2 @@
+"use strict";var ChatApp=ChatApp||{};$(function(){ChatApp={init:function(){ChatApp.chatClickEvents()},chatClickEvents:function(){var t=$(".user-list"),n=$(".user-list_item"),a=$(".chat-content");$("#chatHamburger").on("click",function(){t.removeClass("d-none"),a.removeClass("d-block")}),n.on("click",function(){n.removeClass("active"),$(this).addClass("active")}),$(window).width()<appUtils.breakpoints("md")&&n.on("click",function(){t.addClass("d-none"),a.addClass("d-block")})}},$(document).ready(ChatApp.init)});
+//# sourceMappingURL=chat.app.js.map

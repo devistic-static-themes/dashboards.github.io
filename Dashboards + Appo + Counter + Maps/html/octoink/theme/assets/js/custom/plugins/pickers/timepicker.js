@@ -1,0 +1,2 @@
+"use strict";var Timepicker=Timepicker||{};$(function(){Timepicker={init:function(){$(".timepicker").timepicker({icons:appUtils.timepickerArrows()}),$("#timepicker-1, #timepicker-1_modal").timepicker({icons:appUtils.timepickerArrows(),minuteStep:1,defaultTime:"",showSeconds:!0,showMeridian:!1}),$("#timepicker-2, #timepicker-2_modal").timepicker({icons:appUtils.timepickerArrows(),defaultTime:"09:12:36 AM",minuteStep:1,showSeconds:!0,showMeridian:!0})}},$(document).ready(Timepicker.init)});
+//# sourceMappingURL=timepicker.js.map
